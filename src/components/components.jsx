@@ -9,7 +9,6 @@ class Counter extends Component {
       <div>
         <span className={this.gteBadgeClasses()}>{this.formatCount()}</span>
         <button className="btn btn-secondary btn-sm">Increment</button>
-        <button>Yolo</button>
       </div>
     );
   }
