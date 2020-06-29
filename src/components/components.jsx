@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 class Counter extends Component {
   state = {
-    count: 1,
+    count: 0,
     tags: ["tag1", "tag2", "tag3"],
   };
   render() {
@@ -11,16 +11,6 @@ class Counter extends Component {
         <button className="btn btn-secondary btn-sm">Increment</button>
       </div>
     );
-  }
-  gteBadgeClasses() {
-    let classes = "badge m-2 bagde-";
-    classes += this.state.count === 0 ? "warning" : "primary";
-    return classes;
-  }
-
-  formatCount() {
-    const { count } = this.state;
-    return count === 0 ? "Zero" : count;
   }
 }
 
